@@ -31,4 +31,8 @@ plt.xlabel("Return")
 plt.ylabel("Frequency")
 plt.grid()
 plt.show()
+plt.figure(figsize=(8, 6))
+sns.heatmap(data.corr(), annot=True, cmap="coolwarm", fmt=".2f")
+plt.title("AAPL Data Correlation")
+plt.show()
 
